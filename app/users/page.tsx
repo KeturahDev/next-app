@@ -1,10 +1,5 @@
 import React from "react";
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
+import UserTable from "./UserTable";
 
 // How caching works in Next:
 // {cache: "no-store"} will fetch on every refresh
@@ -16,29 +11,10 @@ interface User {
 // to update the cache?
 // answer: since theres a specific note to "no-store" cache, it will designate this component to run at request time
 const UsersPage = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    cache: "no-store",
-  });
-  const users: User[] = await res.json();
   return (
     <div>
       <h1>Users</h1>
-      <table className="table table-bordered">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <UserTable />
     </div>
   );
 };
