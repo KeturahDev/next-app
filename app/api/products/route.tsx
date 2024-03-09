@@ -31,5 +31,8 @@ export async function POST(request: NextRequest) {
       { status: 400 }
     );
 
-  return NextResponse.json({ id: 23, name: body.name, price: body.price });
+  return NextResponse.json(
+    { id: 23, name: body.name, price: body.price },
+    { status: 201 }
+  );
 }
