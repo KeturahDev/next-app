@@ -1,14 +1,9 @@
-// Here, we write our route handlers
-// route handler = a function that handles http requests
-// http request can have various *methods* - GET/POST/PUT/DELETE
-
 import { NextRequest, NextResponse } from "next/server";
 import schema from "./schema";
 import prisma from "@/prisma/client";
 
-//"request", though not used, prevents endpoint's data from being cached
 export async function GET(request: NextRequest) {
-  const users = await prisma?.user.findMany();
+  const users = await prisma.user.findMany();
   return NextResponse.json(users);
 }
 
