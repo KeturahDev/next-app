@@ -1,6 +1,6 @@
 # Next App
 
-By Keturah Howard, Feb 2024
+By Keturah Smith, Feb 2024.
 
 ## Descsription
 
@@ -28,6 +28,9 @@ This is a tutorial project following the [full course on Next.JS from Mosh](http
 - Typescript
 - Tailwind
 - Prisma
+- Zod
+- MySQL
+- DataGrip
 
 ## Liscense
 
