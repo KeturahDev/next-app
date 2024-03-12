@@ -9,9 +9,10 @@ const ErrorPage = ({ error, reset }: Props) => {
   console.log("Error: ", error);
   return (
     <>
-      <div>An unexpected error has occured</div>
+      <h2 className="font-bold text-2xl">Uh Oh!</h2>
+      <div>An unexpected error has occured.</div>
       <button onClick={() => reset} className="btn btn-primary">
-        Retry
+        Try again
       </button>
     </>
   );
