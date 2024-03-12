@@ -30,7 +30,7 @@ This is a tutorial project following the [full course on Next.JS from Mosh](http
 - Prisma
 - Zod
 - MySQL
-- DataGrip
+- Next Auth
 
 ## Liscense
 
