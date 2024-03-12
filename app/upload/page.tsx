@@ -9,17 +9,24 @@ interface CloudinaryResult {
 const UploadPage = () => {
   const [publicId, setPublicId] = React.useState("");
 
+  console.log("mm", publicId);
   return (
     <>
       {publicId && (
         <CldImage src={publicId} width={270} height={180} alt="img" />
       )}
       <CldUploadWidget
+        options={{
+          sources: ["local"],
+          multiple: false,
+        }}
         uploadPreset="ecu5ve3u"
-        onUploadAdded={(result, { widget }) => {
-          console.log("bingo", result);
+        onUploadAdded={(result) => {
+          console.log("tango", publicId);
+          console.log("wango");
           const info = result.info as unknown as CloudinaryResult;
           setPublicId(info.publicId);
+          console.log("bingo", result);
         }}
       >
         {({ open }) => (
