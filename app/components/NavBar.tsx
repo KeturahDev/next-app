@@ -19,6 +19,9 @@ const NavBar = () => {
       <Link className="mr-5" href="/upload">
         upload
       </Link>
+      <Link className="mr-5" href="/api/auth/signin">
+        sign in
+      </Link>
     </nav>
   );
 };
