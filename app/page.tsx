@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "./components/ProductCard";
 import { getServerSession } from "next-auth";
@@ -9,7 +8,7 @@ export default async function Home() {
 
   return (
     <main>
-      <h1>hello {session?.user?.name ? session?.user?.name : "wurld"}</h1>
+      <h1>Hello {session?.user?.name ? session?.user?.name : "World"}</h1>
       <Link href="/users">users</Link>
       <ProductCard />
     </main>
