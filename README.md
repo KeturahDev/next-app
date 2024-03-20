@@ -32,6 +32,7 @@ This is a tutorial project following the [full course on Next.JS from Mosh](http
 - MySQL
 - Next Auth
 - bcrypt
+- React Email
 
 ## Liscense
 
