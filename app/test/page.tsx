@@ -18,6 +18,19 @@ const TestPage = () => {
       </button>
 
       {isVisible ? <HeavyComponent /> : null}
+
+      <button
+        className="btn"
+        onClick={async () => {
+          const _ = (await import("lodash")).default;
+          const users = [{ name: "c" }, { name: "b" }, { name: "a" }];
+
+          const sorted = _.orderBy(users, ["name"]);
+          console.log(sorted);
+        }}
+      >
+        Log
+      </button>
     </>
   );
 };
