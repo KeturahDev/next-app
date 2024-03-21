@@ -4,23 +4,17 @@ By Keturah Smith, Feb 2024.
 
 ## Descsription
 
-This is a tutorial project following the [full course on Next.JS from Mosh](https://codewithmosh.com/p/ultimate-nextjs-series).
+This is a tutorial project following the [full course on Next.JS from Mosh](https://codewithmosh.com/p/ultimate-nextjs-series). Its really a mess of an app, with no true theme other than exploring powerful concepts for a web application.
 
 ## Behavior List
 
-- to be detailed
-
-<details>
-<summary>Specs</summary>
-
-| Behavior             | Input  |              Output |
-| -------------------- | :----: | ------------------: |
-| generates activities | action | Acivities generated |
-| generates activities | action | Acivities generated |
-| generates activities | action | Acivities generated |
-| generates activities | action | Acivities generated |
-
-</details>
+- User Authentication
+- OAuth with Google
+- App router navigation
+- Full CRUD operations for users and products
+- Database integration
+- File uplaods
+- Sending emails
 
 ## Technologies
 
